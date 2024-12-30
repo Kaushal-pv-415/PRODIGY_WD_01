@@ -1,0 +1,156 @@
+/* General body styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: white;
+    background-color: black; /* Dark background for contrast */
+}
+
+/* Navigation Bar */
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    z-index: 1000;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.nav.scrolled {
+    background-color: black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: color 0.3s, background-color 0.3s, border-color 0.3s;
+}
+
+.nav a:hover {
+    color: #004d99;
+    background-color: white;
+    border-color: #004d99;
+    transform: scale(1.1);
+}
+
+.nav.scrolled a {
+    color: white;
+}
+
+.nav.scrolled a:hover {
+    background-color: #002f66;
+    color: white;
+    border-color: #002f66;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://png.pngtree.com/background/20230425/original/pngtree-parking-lot-full-of-blue-picture-image_2478450.jpg') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.hero-content .btn {
+    background: #00bcd4;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.hero-content .btn:hover {
+    background: #004d99;
+    transform: scale(1.1);
+}
+
+/* Section Styling */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* About Section */
+#about {
+    color: #FFD700; /* Bright yellow for text */
+}
+
+/* Features Section */
+#features {
+    color: #00BFFF; /* Sky blue for text */
+}
+
+/* Benefits Section */
+#benefits {
+    color: #32CD32; /* Lime green for text */
+}
+
+section .content {
+    max-width: 800px;
+    margin: auto;
+}
+
+section h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+section p, section ul {
+    font-size: 1rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+/* Contact Section */
+.contact a {
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.contact a:hover {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
